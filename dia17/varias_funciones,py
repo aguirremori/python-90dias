@@ -1,0 +1,41 @@
+empleados = [
+    {
+        "nombre":"Tom",
+        "cargo": "Planning Manager",
+        "sueldo": 8500
+    },
+    {
+        "nombre": "Laura",
+        "cargo": "Supervisor",
+        "sueldo": 5200
+    },
+    {
+        "nombre": "Pedro",
+        "cargo": "Operario",
+        "sueldo": 2500
+    },
+    {
+        "nombre": "Carlos",
+        "cargo": "Ingeniero",
+        "sueldo": 6200
+    }
+]
+
+def mostrar_empleados(empleados):
+
+    for empleado in empleados:
+        print(empleado["nombre"])
+
+def mostrar_cargos(empleados):
+    for empleado in empleados:
+        print(empleado["cargo"])
+
+def mostrar_sueldos(empleados):
+    for empleado in empleados:
+        print(empleado["sueldo"])
+
+def mostrar_empleados_sueldo(empleados):
+    for empleado in empleados:
+        print(f"{empleado["nombre"]} - S/ {empleado["sueldo"]}")
+
+mostrar_empleados_sueldo(empleados)
